@@ -1,0 +1,22 @@
+modules {
+    module {
+        name = "ngx_reqstatus"
+        language = "python"
+    }
+}
+collection_group {
+    collect_every = 10
+    time_threshold = 60
+    metric { name = "hitrate" }
+    metric { name = "NumGC" }
+    metric { name = "qps" }
+    metric { name = "PersisWrite" }
+    metric { name = "PersisRead" }
+    metric { name = "InternalCacheRead" }
+    metric { name = "clustercacheRead" }
+    metric { name = "hkeys" }
+    metric { name = "hgetall" }
+    metric { name = "hmset" }
+    metric { name = "del" }
+}
+

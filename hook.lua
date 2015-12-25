@@ -1,4 +1,4 @@
--- zhengji@youmi.net
+-- zheng-ji.info
 --
 local reqmonit = require("reqmonit")
 local request_time = ngx.now() - ngx.req.start_time()
