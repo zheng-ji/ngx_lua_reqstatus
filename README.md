@@ -2,14 +2,9 @@
 ## ngx_reqstatus_lua
 
 实时监控 Nginx 域名的 qps, 5xx 个数，响应时长
+其中 `ganglia_conf` 目录是 ganglia 监控脚本
 
-### 文件注释
-
-```
-ganglia_conf # ganglia 监控脚本
-```
-
-### 配置 `nginx.conf`
+#### 配置 `nginx.conf`
 
 ```shell
 http {
@@ -30,7 +25,6 @@ http {
             ...
         }
     }
-
     # 监控服务
     server {
         listen 127.0.0.1:6080;
@@ -41,9 +35,7 @@ http {
 }
 ```
 
-
-
-### 效果
+#### 效果
 
 * 查看 `justforfun.com` 的命令
 
@@ -62,7 +54,8 @@ Requests Per Secs:  0.69444453182781
 5xx num:    0
 ```
 
-License
+
+license
 -------
 
 MIT License.
