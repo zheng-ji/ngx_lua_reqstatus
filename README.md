@@ -7,6 +7,7 @@
 
 ```
 ganglia_conf/ # ganglia 监控脚本
+```
 
 ### 配置
 
