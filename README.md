@@ -6,12 +6,10 @@
 ### 文件注释
 
 ```
-ganglia_conf/ # ganglia 监控脚本
+ganglia_conf # ganglia 监控脚本
 ```
 
-### 配置
-
-### nginx.conf
+### 配置 `nginx.conf`
 
 ```shell
 http {
@@ -25,7 +23,7 @@ http {
         listen 80;
         server_name  justforfun.com; 
 
-        # 需要在需要监控的servername下面配置
+        # 在需要监控的 server_name 添加此句
         log_by_lua_file "/etc/nginx/ngx_reqstatus_lua/hook.lua";
         location /{
             ...
@@ -45,11 +43,15 @@ http {
 
 
 
-### OutPut
+### 效果
+
+* 查看 `justforfun.com` 的命令
 
 ```
 curl localhost:6080/?domain=justforfun.com
 ```
+
+* 输出
 
 ```
 Server Name:    justforfun.com
@@ -63,4 +65,4 @@ Requests Per Secs:  0.69444453182781
 License
 -------
 
-Copyright (c) 2015 by [zheng-ji](http://zheng-ji.info) released under a MIT style license.
+MIT License.
