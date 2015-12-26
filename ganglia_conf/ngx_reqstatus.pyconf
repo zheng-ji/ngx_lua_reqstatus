@@ -5,9 +5,9 @@ modules {
     }
 }
 collection_group {
-    collect_every = 10
+    collect_every = 60
     time_threshold = 60
-    metric { name = "hitrate" }
+    metric { name = "" }
     metric { name = "NumGC" }
     metric { name = "qps" }
     metric { name = "PersisWrite" }
