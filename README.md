@@ -1,8 +1,7 @@
 
 ## ngx_reqstatus_lua
 
-实时监控 Nginx 域名的 qps, 5xx 个数，响应时长
-其中 `ganglia_conf` 目录是 ganglia 监控脚本
+实时监控 Nginx 域名的 qps, 5xx 个数，响应时长, 其中 `ganglia_conf` 目录是 ganglia 监控脚本。
 
 #### 配置 `nginx.conf`
 

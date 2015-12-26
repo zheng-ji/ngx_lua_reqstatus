@@ -8,15 +8,9 @@ collection_group {
     collect_every = 60
     time_threshold = 60
     metric { name = "" }
-    metric { name = "NumGC" }
+    metric { name = "request_count" }
     metric { name = "qps" }
-    metric { name = "PersisWrite" }
-    metric { name = "PersisRead" }
-    metric { name = "InternalCacheRead" }
-    metric { name = "clustercacheRead" }
-    metric { name = "hkeys" }
-    metric { name = "hgetall" }
-    metric { name = "hmset" }
-    metric { name = "del" }
+    metric { name = "5xx_num" }
+    metric { name = "avg_req_time" }
 }
 
