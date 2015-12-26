@@ -7,10 +7,6 @@
 
 ```
 ganglia_conf/ # ganglia 监控脚本
-hook.lua
-reqmonit.lua
-status.lua
-```
 
 ### 配置
 
@@ -43,7 +39,6 @@ http {
             access_by_lua_file "/etc/nginx/ngx_reqstatus_lua/status.lua";
         }
     }
-
 }
 ```
 
@@ -62,7 +57,6 @@ Request Count:      1
 Average Req Time:   0 secs
 Requests Per Secs:  0.69444453182781
 5xx num:    0
-
 ```
 
 License
