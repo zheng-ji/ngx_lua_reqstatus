@@ -45,11 +45,11 @@ curl localhost:6080/?domain=justforfun.com
 * 输出
 
 ```
-Server Name:    justforfun.com
-Seconds SinceLast:   1.4399998188019 secs
-Request Count:      1
-Average Req Time:   0 secs
-Requests Per Secs:  0.69444453182781
+Server Name key:    justforfun.com
+Seconds SinceLast:  26.601999998093
+Average Req Time Sec:   0.031799983978271
+Request Count:  5
+Requests Per Secs:  0.18795579281101
 5xx num:    0
 ```
 

@@ -1,6 +1,5 @@
--- zheng-ji.info
+-- zheng-ji
 --
-
 local reqmoit = {}
 local function incr(dict, key, increment)
    increment = increment or 1
@@ -19,7 +18,6 @@ function reqmoit.stat(dict, key, value)
 
    local start_time = dict:get(start_time_key)
    if not start_time then
-      ngx.log(ngx.ERR, 'now: ', ngx.now())
       dict:set(start_time_key, ngx.now())
    end
 
