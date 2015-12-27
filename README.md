@@ -36,7 +36,7 @@ http {
 
 #### 效果
 
-* 查看 `justforfun.com` 的命令
+* 查看 域名 `justforfun.com` 的qps,5xx个数，平均响应时长:
 
 ```
 curl localhost:6080/?domain=justforfun.com
