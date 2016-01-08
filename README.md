@@ -1,5 +1,5 @@
 
-## ngx_reqstatus_lua
+## ngx_lua_reqstatus
 
 实时监控 Nginx 域名的 qps, 5xx 个数，响应时长, 其中 `ganglia_conf` 目录是 ganglia 监控脚本。
 
@@ -11,14 +11,14 @@ http {
     ...
 
     lua_shared_dict statics_dict    1M; # 初始化变量
-    lua_package_path "/etc/nginx/ngx_reqstatus_lua/?.lua";  #路径
+    lua_package_path "/etc/nginx/ngx_lua_reqstatus/?.lua";  #路径
 
     server {
         listen 80;
         server_name  justforfun.com; 
 
         # 在需要监控的 server_name 添加此句
-        log_by_lua_file "/etc/nginx/ngx_reqstatus_lua/hook.lua";
+        log_by_lua_file "/etc/nginx/ngx_lua_reqstatus/hook.lua";
         location /{
             ...
             ...
@@ -28,7 +28,7 @@ http {
     server {
         listen 127.0.0.1:6080;
         location /{
-            access_by_lua_file "/etc/nginx/ngx_reqstatus_lua/status.lua";
+            access_by_lua_file "/etc/nginx/ngx_lua_reqstatus/status.lua";
         }
     }
 }
