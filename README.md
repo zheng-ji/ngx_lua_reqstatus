@@ -12,18 +12,16 @@ http {
 
     lua_shared_dict statics_dict    1M; # 初始化变量
     lua_package_path "/etc/nginx/ngx_lua_reqstatus/?.lua";  #路径
+    log_by_lua_file "/etc/nginx/ngx_lua_reqstatus/hook.lua"; #  添加此句
 
     server {
         listen 80;
         server_name  justforfun.com; 
-
-        # 在需要监控的 server_name 添加此句
-        log_by_lua_file "/etc/nginx/ngx_lua_reqstatus/hook.lua";
         location /{
-            ...
             ...
         }
     }
+
     # 监控服务
     server {
         listen 127.0.0.1:6080;
