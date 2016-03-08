@@ -36,6 +36,8 @@ http {
 
 * 查看 域名 `justforfun.com` 的qps,5xx个数，平均响应时长:
 
+![example](https://github.com/zheng-ji/ngx_lua_reqstatus/blob/master/pic/ganglia.png)
+
 ```
 curl localhost:6080/?domain=justforfun.com
 ```
