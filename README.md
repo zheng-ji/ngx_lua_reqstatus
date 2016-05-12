@@ -36,7 +36,7 @@ http {
 
 * 查看 域名 `justforfun.com` 的qps,5xx个数，平均响应时长:
 
-![example](https://github.com/zheng-ji/ngx_lua_reqstatus/blob/master/pic/ganglia.png)
+![ganglia](https://cloud.githubusercontent.com/assets/1414745/15214266/afccb2b6-187e-11e6-96c2-f97753295452.png)
 
 ```
 curl localhost:6080/?domain=justforfun.com
@@ -53,6 +53,9 @@ Requests Per Secs:  0.18795579281101
 5xx num:    0
 ```
 
+* 如果对你有帮助,请我喝杯饮料吧 :)
+
+![wechatqr](https://cloud.githubusercontent.com/assets/1414745/15214256/a3a2aeaa-187e-11e6-9e6e-94abcc5efb10.png)
 
 license
 -------
