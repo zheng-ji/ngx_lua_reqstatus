@@ -26,7 +26,7 @@ http {
     server {
         listen 127.0.0.1:6080;
         location /{
-            access_by_lua_file "/etc/nginx/ngx_lua_reqstatus/status.lua";
+            content_by_lua_file "/etc/nginx/ngx_lua_reqstatus/status.lua";
         }
     }
 }
